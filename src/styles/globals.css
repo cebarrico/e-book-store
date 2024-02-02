@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+header {
+  z-index: 10000;
+  position: fixed !important;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  /* background-color: rgb(47, 167, 175); */
+}
+
+.logo {
+  background-color: rgb(47, 167, 175);
+  width: 50px;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: contain;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  /* height: calc(100dvh - 45px); */
+  height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  background-color: white;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,80 @@
+nav {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(47, 167, 175);
+  border-radius: 0px 20px 20px 0px;
+  /* border-bottom: 6px sored; rgb(47, 167, 175); */
+}
+
+a {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 35px;
+  height: 35px;
+
+  border-radius: 0px 0px 35px 35px;
+  /* padding: 1px; */
+  /* border: 2px solid rgb(47, 167, 175); */
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.icon:hover,
+.icon:hover svg {
+  background-color: white;
+  fill: rgb(47, 167, 175);
+}
+
+.icon:hover .indicator {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background-color: white; */
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.icon:hover .circle {
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  border-radius: 50%;
+  border: 2px solid rgb(47, 167, 175);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon:hover .indicator::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 0px 10px 0px 0px;
+  box-shadow: 4px -6px 0px 2px white;
+}
+.icon:hover .indicator::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 10px 0px 0px 0px;
+  box-shadow: -4px -6px 0px 2px white;
+}
